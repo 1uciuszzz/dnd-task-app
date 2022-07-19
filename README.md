@@ -1,5 +1,6 @@
 # dnd-task-app
- demo for interview
+
+demo for interview
 
 ## usage
 
@@ -17,3 +18,7 @@ npm run dev
 1. in backend project, i write my own middleware for auth router.
 2. redux but without redux-saga😭
 3. axios for requests
+
+## video
+
+![](video.gif)
