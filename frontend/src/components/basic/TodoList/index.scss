@@ -1,0 +1,9 @@
+.todoList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.highlight{
+  border: 5px solid black;
+}

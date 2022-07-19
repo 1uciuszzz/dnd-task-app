@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const util_1 = require("./util");
 const user_1 = require("./router/user");
@@ -14,6 +15,7 @@ util_1.db;
 const port = process.env.PORT;
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
+app.use((0, cors_1.default)());
 app.use("/api/user", user_1.user);
 app.use("/api/auth", auth_1.auth);
 app.use("/api/todo", todo_1.todo);
