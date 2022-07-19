@@ -6,7 +6,7 @@ const Landing = () => {
   const navigate = useNavigate()
   return (
     <div>
-      <Button click={() => { navigate("/todo") }} value='Start' type='primary' style={{ border: "none", padding: "10px" }} />
+      <Button click={() => { navigate("/signin") }} value='Start' type='primary' style={{ border: "none", padding: "10px" }} />
     </div>
   )
 }

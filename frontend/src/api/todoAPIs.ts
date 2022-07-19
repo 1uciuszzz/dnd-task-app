@@ -15,3 +15,10 @@ export const deleteTodo = (todoId: string) => {
 export const changeStatus = (todoId: string, status: number) => {
   return request.patch(`/todo/${todoId}`, { status });
 };
+
+export const signIn = (username: string, password: string) => {
+  return request.post(`/auth`, {
+    username: username,
+    password: password,
+  });
+};
