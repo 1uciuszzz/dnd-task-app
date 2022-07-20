@@ -13,6 +13,10 @@ npm i
 npm run dev
 ```
 
+test account:
+username:`lucius`
+password:`lucius`
+
 ## highlights
 
 1. in backend project, i write my own middleware for auth router.
