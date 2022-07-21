@@ -4,7 +4,11 @@ demo for interview
 
 ## usage
 
-backend folder is missing .env file, but you can visit http://lucius.top:5000(服务器7月21号过期了，8好意思😅) to see the hello api.
+```sh
+cd backend
+docker build -t lucius/dndapp:1.0 .
+docker run -p <name>
+```
 
 in frontend folder,
 
@@ -13,7 +17,24 @@ npm i
 npm run dev
 ```
 
-test account:
+first use postman send a POST request to http://localhost:5000/api/user for register a account
+
+datatype:json
+
+data:
+
+```json
+{
+  "username": "lucius",
+  "password": "lucius"
+}
+```
+
+for example:
+
+![](register.png)
+
+then signin with account:
 username:`lucius`
 password:`lucius`
 
@@ -21,7 +42,8 @@ password:`lucius`
 
 1. in backend project, i write my own middleware for auth router.
 2. redux but without redux-saga😭
-3. axios for requests
+3. docker deploy backend service
+   ![](docker.png)
 
 ## video
 
