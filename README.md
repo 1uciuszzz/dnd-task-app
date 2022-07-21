@@ -7,7 +7,7 @@ demo for interview
 ```sh
 cd backend
 docker build -t lucius/dndapp:1.0 .
-docker run -p <name>
+docker run -p <image id>
 ```
 
 in frontend folder,
