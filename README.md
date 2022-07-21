@@ -17,32 +17,15 @@ npm i
 npm run dev
 ```
 
-first use postman send a POST request to http://localhost:5000/api/user for register a account
-
-datatype:json
-
-data:
-
-```json
-{
-  "username": "lucius",
-  "password": "lucius"
-}
-```
-
-for example:
-
-![](register.png)
-
-then signin with account:
-username:`lucius`
+test account:  
+username:`lucius`  
 password:`lucius`
 
 ## highlights
 
 1. in backend project, i write my own middleware for auth router.
 2. redux but without redux-saga😭
-3. docker deploy backend service
+3. deploy backend service in docker
    ![](docker.png)
 
 ## video
